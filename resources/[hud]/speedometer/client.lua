@@ -1,7 +1,3 @@
-print("WaZorLua")
-print("WaZorLua")
-print("WaZorLua")
-
 local showHUD = true
 
 RegisterNetEvent("car_hudWeZorLua:updateCARHUD")
@@ -89,6 +85,4 @@ local rList = {
         name = 'XNLRankBar',
     },
 }
-
-print("Leaks By WaZorLua")--LeaksWeZorLuaLeaksWeZorLuaLeaksWeZorLuaLeaksWeZorLua
 
