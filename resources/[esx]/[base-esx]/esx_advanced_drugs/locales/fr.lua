@@ -1,0 +1,82 @@
+locales['fr'] = {
+    ['not_enough'] = "Vous n'avez pas assez ~r~%s",
+    ['open_lab'] = "Appuyez sur ~INPUT_CONTEXT~ pour utiliser le laboratoire",
+    ['press_to_stop'] = "Appuyez sur ~INPUT_CONTEXT~ pour arrêter",
+    ['stopped'] = "Vous avez arrêté",
+    ['too_far'] = "Vous avez quitté le laboratoire",
+    ['lab'] = "Laboratoire",
+    ['interact'] = "Appuyez sur ~INPUT_CONTEXT~ pour interagir",
+    ['sold'] = "Vous avez vendu ~b~x%d~s~ ~y~%s~s~ pour ~r~$%s",
+    ['height'] = "Hauteur actuelle : %s%dm", -- %s will be the color, don't remove it
+    ['nothing_useful'] = "Vous n'avez rien d'utile",
+    ['minimum_altitude'] = "Vous n'êtes pas au-dessus de l'altitude minimale",
+    ['remain_to_sell'] = "rester au-dessus de cette altitude pendant ~g~%ds~s~ pour vendre de la drogue",
+    ['timer'] = "Attendez ~g~%ds~s~ pour vendre de la drogue",
+    ['plane_spotted'] = "Un avion suspect a été repéré sur la carte.",
+    ['boat_spotted'] = "Un bateau suspect a été repéré sur la carte.",
+    ['no_space'] = "Vous n'avez plus de place",
+    ['crafting_drug'] = "Crafting %s",
+    ["it_will_explode"] = "Il y aura une explosion dans quelques secondes, ~r~COURREZ~s~",
+    ["explosion_in_zone"] = "Il y avait une ~r~explosion~s~ in ~y~%s~s~",
+    ['wrong_items'] = "Vous avez utilisé de mauvais ingrédients",
+    ['ingredient_taken'] = "Vous avez récolté ~b~x%d~s~ ~y~%s~s~",
+    ['press_to_sell'] = "Appuyez sur E pour vendre de la drogue",
+    ['drug_not_wanted'] = "Cette personne ne veut pas de drogue",
+    ['sold_for'] = "Vous avez vendu ~y~x%d %s~s~ pour ~g~$%s~s~",
+    ['someone_tried_to_sell_drugs'] = "Quelqu'un a tenté de vendre de la ~r~drogues~s~ à ~y~%s~s~",
+    ['not_enough_police'] = "Il n'y a pas assez de policiers",
+    ['gang_member'] = "Membre du gang",
+    ['this_is_our_zone'] = "C'est ~r~notre~s~ zone!",
+    ['citizen'] = "Citoyen",
+    ['how_you_dare'] = "Comment osez-vous ?",
+    ['press_to_retrieve_drugs'] = "Appuyez sur ~INPUT_CONTEXT~ pour récupérer vos médicaments.",
+    ['drug_has_been_stolen'] = "~b~x%d~s~ ~y~%s~s~ ~r~vous a été volé !~s~ Récupérez-le !",
+    ['interact_narcos'] = "Appuyez sur ~INPUT_CONTEXT~ pour parler aux narcos",
+    ['narcos:drug_request'] = "<span style='color: %s'>x%d %s - $%s</span>",
+    ['narcos:this_is_what_i_need'] = "Voici ce dont j'ai besoin",
+    ['narcos:sold_drug'] = "Vous avez vendu ~b~x%d~s~ ~y~%s~s~ for ~r~$%s~s~",
+    ['invalid_quantity'] = "Quantité invalide",
+    ['confirm'] = "<span style='color: green'>Confirm</span>",
+    ['quantity'] = "Quantité",
+    ['you_have_to_wait'] = "Vous devez attendre avant de l'utiliser à nouveau",
+    ['you_cant_sell_anymore'] = "Vous ne pouvez pas vendre plus",
+    ['i_dont_need_anything_for_now'] = "Je n'ai pas besoin d'acheter ~r~quelque chose~s~ pour l'instant, reviens plus tard.",
+    ['narcos'] = "Narcos",
+    ["no_drugs_to_sell"] = "Vous n'avez pas de drogue à vendre",
+    ["canceled_sale"] = "Vente ~r~annulée~s~",
+
+    -- Pushers
+    ["pusher"] = "Pusher",
+    ["interact_pusher"] = "Appuyez sur ~INPUT_CONTEXT~ pour parler au pusher",
+    ["pusher:drug_to_sell"] = "<span style='color: %s'>%d/%d - %s</span>",
+    ["pusher:sold"] = "Vous avez vendu ~b~x%d~s~ ~y~%s~s~ pour ~r~$%s~s~",
+
+    --[[ Logs ]]
+    ['log_generic'] = "Nickname: %s\nIdentifier: %s\n\n%s",
+
+    ['logs:pickedUpItem'] = "Ramassé un objet récoltable",
+    ['logs:pickedUpItem:description'] = "Pris en charge **x%d** **%s** en article récoltable **%d**",
+    ['logs:pickedUpItem:error'] = "J'ai essayé de prendre un article non valide",
+    ['logs:pickedUpItem:error:description'] = "J'ai essayé de ramasser **%s**",
+    
+    ["logs:drugField"] = "Récolté dans un champ de drogue",
+    ["logs:drugField:description"] = "Récolté  **x%d** **%s** dans le champ de drogue **%s** (ID du champ: **%d**)",
+
+    ['logs:craftedRecipe'] = "Recette artisanale en laboratoire",
+    ['logs:craftedRecipe:description'] = "Recette artisanale **%s** dans le laboratoire **%s** (ID du laboratoire: **%d**)",
+
+    ['logs:soldOnPlane'] = "A vendu de la drogue dans un avion",
+    ['logs:soldOnPlane:description'] = "Vendu **%s** pour **$%s**",
+
+    ['logs:soldOnBoat'] = "A vendu de la drogue sur un bateau",
+    ['logs:soldOnBoat:description'] = "Vendu **%s** pour **$%s**",
+
+    ['logs:soldToNarcos'] = "Vendu aux narcos",
+    ['logs:soldToNarcos:description'] = "Vendu **x%d** **%s** pour **$%s** aux narcos",
+
+    ['logs:soldToNPC'] = "Vendu au PNJ",
+    ['logs:soldToNPC:description'] = "Vendu **x%d** **%s** pour **$%s** au PNJ",
+
+    ['logs:soldToPusher'] = "Vendu au pusher",
+    ['logs:soldToPusher:description'] = "Vendu **x%d** **%s** pour **$%s** au pusher ID **%d**",
+}

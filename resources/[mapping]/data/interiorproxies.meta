@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="3000" />
+  <proxies>
+	<!-- cityhall-->
+	<Item>int_cityhall_milo_</Item>
+	<Item>Clawles_int_placement</Item>
+	<Item>bh1_occl_05</Item>
+	<!-- henhouse -->
+	<Item>smokey_henhouse_milo</Item>
+	<Item>smokey_henhouse_garaz_milo</Item>
+  </proxies>
+</SInteriorOrderData>

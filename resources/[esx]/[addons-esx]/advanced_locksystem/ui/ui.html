@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<title>Panel</title>
+		<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="panel.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+		<script src="panel.js"></script>
+	</head>
+	<body>
+		<div id="panel-holder">
+			<div id="display">
+				<svg class="numPanel">
+					<pattern elementId="numPanelArea" id="numPanelArea" x="0" y="0" width="100%" height="100%">
+						<image x="0" y="0" width="100%" height="100%" href="panel2.jpg" xlink:href="panel2.jpg"></image>
+					</pattern>
+					<rect id="numPanel" rx="0" ry="0" x="0" y="0" width="591" height="450">
+					</rect>
+				</svg>
+			</div>
+				
+			<div id="keycontrols">
+				<button id="key1" type="submit" name="key1"></button>
+				<button id="key2" type="submit" name="key2"></button>
+				<button id="key3" type="submit" name="key3"></button>
+				<button id="key4" type="submit" name="key4"></button>
+				<button id="key5" type="submit" name="key5"></button>
+				<button id="key6" type="submit" name="key6"></button>
+				<button id="key7" type="submit" name="key7"></button>
+				<button id="key8" type="submit" name="key8"></button>
+				<button id="key9" type="submit" name="key9"></button>
+				<button id="key0" type="submit" name="key0"></button>
+				
+				<button id="keyCancel" type="submit" name="keyCancel"></button>
+				<button id="keyClear" type="submit" name="keyClear"></button>
+				<button id="keyEnter" type="submit" name="keyEnter"></button>
+			</div>
+		</div>
+		<div id="door-form">
+			<form>
+			  <div class="form-group row">
+				<label for="authorized_jobs" class="col-4 col-form-label">Jobs</label> 
+				<div class="col-8">
+				  <input id="authorized_jobs" name="authorized_jobs" placeholder="police, sheriff, ambulance" type="text" aria-describedby="jobsHelpBlock" required="required" class="form-control"> 
+				  <span id="jobsHelpBlock" class="form-text text-muted">use "," sign between every job name</span>
+				</div>
+			  </div>
+			  <div class="form-group row">
+				<label class="col-4">Door Type</label> 
+				<div class="col-8">
+				  <div class="custom-control custom-checkbox custom-control-inline">
+					<input name="isgate" id="isgate_0" type="checkbox" class="custom-control-input" value="yes" aria-describedby="isgateHelpBlock"> 
+					<label for="isgate_0" class="custom-control-label">Is Gate</label>
+				  </div>
+				  <span id="isgateHelpBlock" class="form-text text-muted">if the door is a gate or electric then check this</span>
+				</div>
+			  </div>
+			  <div class="form-group row">
+				<label for="pincode" class="col-4 col-form-label">Pincode</label> 
+				<div class="col-8">
+				  <input id="pincode" name="pincode" placeholder="4 digit maximum" type="text" class="form-control" aria-describedby="pincodeHelpBlock"> 
+				  <span id="pincodeHelpBlock" class="form-text text-muted">only numbers accepted like 1234</span>
+				</div>
+			  </div>
+			  <div class="form-group row">
+				<label class="col-4">Unlockable</label> 
+				<div class="col-8">
+				  <div class="custom-control custom-checkbox custom-control-inline">
+					<input name="unlockable" id="unlockable_0" type="checkbox" aria-describedby="unlockableHelpBlock" class="custom-control-input" value="yes" checked="checked"> 
+					<label for="unlockable_0" class="custom-control-label"></label>
+				  </div> 
+				  <span id="unlockableHelpBlock" class="form-text text-muted">if you check this your door cannot be hacked or lockpicked</span>
+				</div>
+			  </div>
+			  <div class="form-group row">
+				<label class="col-4">Locked</label> 
+				<div class="col-8">
+				  <div class="custom-control custom-checkbox custom-control-inline">
+					<input name="locked" id="locked_0" type="checkbox" class="custom-control-input" value="yes" aria-describedby="lockedHelpBlock" checked="checked"> 
+					<label for="locked_0" class="custom-control-label"></label>
+				  </div> 
+				  <span id="lockedHelpBlock" class="form-text text-muted">by default the door is locked already</span>
+				</div>
+			  </div>
+			  <div class="form-group row">
+				<label for="size" class="col-4 col-form-label">Size</label> 
+				<div class="col-8">
+				  <input id="size" name="size" placeholder="1 is default" type="text" class="form-control" aria-describedby="sizeHelpBlock" required="required"> 
+				  <span id="sizeHelpBlock" class="form-text text-muted">size of the lock icon on door, for gates put a number like 3</span>
+				</div>
+			  </div>
+			  <div class="form-group row">
+				<label for="distance" class="col-4 col-form-label">Distance</label> 
+				<div class="col-8">
+				  <input id="distance" name="distance" placeholder="1.5 is default" type="text" aria-describedby="distanceHelpBlock" required="required" class="form-control"> 
+				  <span id="distanceHelpBlock" class="form-text text-muted">value can be float like 1.5 or normal number like 2, for gates put a number between 15-20 (recommended)</span>
+				</div>
+			  </div> 
+			  <div class="form-group row">
+				<div class="offset-4 col-8">
+				  <button name="submit" type="submit" class="btn btn-primary" id="submit">Submit</button>
+				  <button class="btn btn-warning" id="cancel">Cancel</button>
+				</div>
+			  </div>
+			</form>
+		</div>
+	</body>
+</html>

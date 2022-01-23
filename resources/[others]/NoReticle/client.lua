@@ -1,10 +1,10 @@
 Citizen.CreateThread(function()
 	local isSniper = false
+
 	while true do
 		Citizen.Wait(0)
 
     	local ped = GetPlayerPed(-1)
-
 		
 		--print(GetHashKey("WEAPON_SNIPERRIFLE"))
 		local currentWeaponHash = GetSelectedPedWeapon(ped)
@@ -24,5 +24,6 @@ Citizen.CreateThread(function()
 		if not isSniper then
 			HideHudComponentThisFrame(14)
 		end
+		
 	end
 end)
